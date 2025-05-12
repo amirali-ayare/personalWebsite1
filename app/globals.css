@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'IRANYekan'; */
+  font-family: 'Vazir FD';
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.Navbarhover {
+  --c: #4C0519;
+  background:
+    linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+.Navbarhover:hover {
+  --_p: 100%
+}
+
+@keyframes opensmMenu {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+#menu-sm {
+  right: 0;
+  background-color: #141414;
+  animation: opensmMenu .3s;
+  z-index: 99999999999999999999999999999999999999999999999;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
+#header {
+  background-image: url("../image/headerBg.jpg");
+  background-size: cover;
+  /* height: 700px; */
+}
+
+.job-text {
+  border-left: 3px solid #bcbcbc;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 1.5s steps(18),
+    cursor .6s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+
+.animation-text {
+  animation: animationText 4s infinite;
+  z-index: 1;
+  top: 200px;
+}
+
+@keyframes animationText {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.manimage {
+  z-index: 2;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+
+.line-anim {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  transition: .3s;
+}
+
+.line-anim:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F43F5E;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.line-anim:hover {
+  color: #F43F5E;
+}
+.line-anim:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
+.line-anim2 {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  transition: .3s;
+}
+
+.line-anim2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.line-anim2:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+#bg-gradient-rose {
+  background: rgb(9,9,11);
+background: linear-gradient(137deg, rgba(9,9,11,1) 35%, rgba(244,63,94,0.6560749299719888) 100%);
+}
+
+.card-anim-border{
+  position: relative;
+  height: 185px;
+  background-color: rgba(9, 9, 11,1);
+  border-radius: 20px;
+}
+
+.card-anim-border::before {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(#F43F5E, transparent, transparent);
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s , top 0s, left 0s;
+  z-index: 1;
+}
+.card-anim-border:hover:before {
+  opacity: 1;
+}
+.card-anim-border::after {
+  position: absolute;
+  content: "";
+  inset: 3px;
+  /* background-color: #222; */
+  border-radius: 20px;
+  background-color: rgba(9, 9, 11,.85);
+  z-index: 1;
+}
+.card-anim-border .text {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.card-anim-border2{
+  position: relative;
+  background-color: rgba(9, 9, 11,1);
+}
+
+.card-anim-border2::before {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(#F43F5E, transparent, transparent);
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s , top 0s, left 0s;
+  z-index: 1;
+}
+.card-anim-border2:hover:before {
+  opacity: 1;
+}
+.card-anim-border2::after {
+  position: absolute;
+  content: "";
+  inset: 2px;
+  border-radius: 20px;
+  background-color: rgba(9, 9, 11,.85);
+  z-index: 1;
+}
+.card-anim-border2 .text {
+  position: relative;
+  z-index: 2;
+}
+
+.hoverImg:hover img{
+  transform: scale(1.05);
+}
+
+.hovercard p{
+  transition: .5s;
+}
+.hovercard span {
+  transition: .5s;
+}
+.hovercard:hover p{
+  color: #fff;
+}
+.hovercard:hover span {
+  border-color: #fff;
+}
+
+.commentDiv {
+  background-image: url(../image/comment1.png);
+  background-repeat: no-repeat;
+}
+.pages-header {
+  background-image: url(../image/pagesBg.jpg);
+  background-size: cover;
+}
