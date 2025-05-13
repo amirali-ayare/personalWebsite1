@@ -1,10 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import pr1 from '@/image/pr1.png'
-import pr2 from '@/image/pr2.png'
-import pr3 from '@/image/pr3.png'
-import pr4 from '@/image/pr4.png'
-import Image from 'next/image'
 import Portfolio from '@/components/portfolio'
 
 

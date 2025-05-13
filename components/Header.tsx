@@ -18,7 +18,6 @@ function Header() {
                     این سایت تجربه های کاری من, مجموعه ای از نمونه کارهای من و مهارت من را به نمایش میزارد. با استفاده از لینک های
                     شبکه اجتماعی میتونید با من در فضای مجازی در ارتباط باشید.
                 </p>
-                {/* <button></button> */}
             </div>
 
             <div className='flex items-center justify-center px-10 relative'>

@@ -3,7 +3,6 @@ import Connect from '@/components/Connect'
 import Education from '@/components/Education'
 import ExpCards from '@/components/ExpCards'
 import Experiences from '@/components/Experiences'
-import MySkill from '@/components/MySkill'
 import Link from 'next/link'
 import React from 'react'
 
