@@ -1,8 +1,8 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { JSX, useRef } from 'react'
 
 interface IContactCard {
-    icon: any;
+    icon: JSX.Element;
     title: string;
     p: string;
 }
